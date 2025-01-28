@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('./server/utils/helpers.php');
+require_once(__DIR__ . '/utils/helpers.php');
 
 if (isset($_GET['fill'])) fill();
 if (isset($_GET['flush'])) erase();
