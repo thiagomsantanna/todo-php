@@ -1,0 +1,24 @@
+- [ ] `server/operations/Add.php`
+  - [x] finish implementing tasks to be in arrays
+  - [ ] implement a validation to check duplicated tasks
+- [ ] `server/operations/Edit.php`
+  - [ ] implement JS on index.php
+  - [ ] implement `Edit.php` file
+  - [ ] implement repeating validation code
+- [x] `server/operations/Check.php`
+- [ ] `server/objects/Errors.php`
+  - (Do this after `Edit.php`)
+  - [ ] abstract the errors to a file declaring them as consts
+- [ ] `server/utils/task_validation.php`
+  - (Do this after `Edit.php`)
+  - [ ] abstract common validations to methods
+  
+### Files to be sent:
+- [ ] Fixed `style.css` and `index.php`
+  - **Improvements:**
+    - Using a text tag to show task `<p>`
+    - Using only `formaction` to setup files on forms, because which button do something
+    - text word-wrap, 
+    - doing the button hovers correctly with the button element (no more styling the span)
+    - little buttons around the description
+- [ ] `helpers.php`
