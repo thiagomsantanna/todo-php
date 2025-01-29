@@ -42,7 +42,7 @@ if (!isset($_SESSION['tasks'])) {
       input.focus();
 
       addButton.innerText = "Edit";
-      addButton.attributes.formaction.value = "./server/operations/Edit.php";
+      addButton.attributes.formaction.value = "./operations/Edit.php";
     }
   </script>
 </head>
@@ -67,7 +67,7 @@ if (!isset($_SESSION['tasks'])) {
         <input type="hidden" name="id" value="">
         <input type="text" name="task" id="input-box" placeholder="Add your text">
 
-        <button id="add" type="submit" formaction="./server/operations/Add.php">Add</button>
+        <button id="add" type="submit" formaction="./operations/Add.php">Add</button>
       </form>
 
       <!-- Tasks -->
@@ -77,7 +77,7 @@ if (!isset($_SESSION['tasks'])) {
 
           <form method="post">
             <li class=<?= $check ?>>
-              <button type="submit" formaction="./server/operations/Check.php">
+              <button type="submit" formaction="./operations/Check.php">
                 <img onclick="check(event)" class=<?= $check ?> />
               </button>
 
@@ -86,7 +86,7 @@ if (!isset($_SESSION['tasks'])) {
               <button type="button" onclick="edit('<?= $index ?>', '<?= $task['description'] ?>')">
                 <span class="edit">&#x270E</span>
               </button>
-              <button type="submit" formaction="./server/operations/Delete.php">
+              <button type="submit" formaction="./operations/Delete.php">
                 <span>&#x00D7</span>
               </button>
             </li>

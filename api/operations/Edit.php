@@ -1,12 +1,18 @@
 <?php
 session_start();
-require("../utils/task_validation.php");
+require_once(__DIR__ . "/../utils/goback.php");
+require_once(__DIR__ . "/../utils/task_validation.php");
 
 $error = &$_SESSION['error'];
 $tasks = &$_SESSION['tasks'];
 
 $task_id = $_POST['id'];
 $task = $_POST['task'];
+
+if (is_null($task_id)) {
+  $error = ERRORS['not_found'];
+  go_back();
+}
 
 $old_task = $tasks[$task_id];
 

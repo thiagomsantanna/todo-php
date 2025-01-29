@@ -1,6 +1,6 @@
 <?php
-require("../objects/Errors.php");
-require("goback.php");
+require_once(__DIR__ . "/../objects/Errors.php");
+require_once(__DIR__ . "/goback.php");
 
 function empty_task(&$error)
 {

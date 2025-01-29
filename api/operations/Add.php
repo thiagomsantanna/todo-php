@@ -1,6 +1,6 @@
 <?php
 session_start();
-require("../utils/task_validation.php");
+require_once(__DIR__ . "/../utils/task_validation.php");
 
 $error = &$_SESSION['error'];
 $tasks = &$_SESSION['tasks'];

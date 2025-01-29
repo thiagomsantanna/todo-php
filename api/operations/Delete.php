@@ -1,7 +1,7 @@
 <?php
 session_start();
-require("../objects/Errors.php");
-require("../utils/goback.php");
+require_once(__DIR__ . "/../objects/Errors.php");
+require_once(__DIR__ . '/../utils/goback.php');
 
 $error = &$_SESSION['error'];
 $task_id = $_POST['id'];
